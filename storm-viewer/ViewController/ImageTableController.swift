@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ImageTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private var pictures = [String]()
     private let cellId = "pictureCell"
     var tableView:UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Images"
         
         renderTableView()
         loadImages()
@@ -49,6 +50,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.accessoryType = .disclosureIndicator
         cell.tintColor = UIColor.blue
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photoDetailController = PhotoDetailController()
+        navigationController?.pushViewController(photoDetailController, animated: true)
     }
 }
 
