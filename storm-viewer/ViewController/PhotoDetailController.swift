@@ -9,8 +9,11 @@
 import UIKit
 
 class PhotoDetailController: UIViewController {
+    var imageName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        navigationItem.title = imageName
     }
 }

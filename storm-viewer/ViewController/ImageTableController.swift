@@ -54,6 +54,7 @@ class ImageTableController: UIViewController, UITableViewDelegate, UITableViewDa
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let photoDetailController = PhotoDetailController()
+        photoDetailController.imageName = pictures[indexPath.item]
         navigationController?.pushViewController(photoDetailController, animated: true)
     }
 }
