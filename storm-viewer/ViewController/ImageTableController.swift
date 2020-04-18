@@ -16,6 +16,7 @@ class ImageTableController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Images"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         renderTableView()
         loadImages()

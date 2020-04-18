@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B45A6D0244B0F570018A954 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45A6CF244B0F570018A954 /* Extensions.swift */; };
 		1B5C90E6244813CA0013BE33 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C90DC244813CA0013BE33 /* nssl0049.jpg */; };
 		1B5C90E7244813CA0013BE33 /* nssl0046.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C90DD244813CA0013BE33 /* nssl0046.jpg */; };
 		1B5C90E8244813CA0013BE33 /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C90DE244813CA0013BE33 /* nssl0091.jpg */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B45A6CF244B0F570018A954 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1B5C90DC244813CA0013BE33 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		1B5C90DD244813CA0013BE33 /* nssl0046.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0046.jpg; sourceTree = "<group>"; };
 		1B5C90DE244813CA0013BE33 /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B45A6CE244B0F4B0018A954 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B45A6CF244B0F570018A954 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1B5C90DB244813CA0013BE33 /* Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		1B7EC00624480AF60020E74E /* storm-viewer */ = {
 			isa = PBXGroup;
 			children = (
+				1B45A6CE244B0F4B0018A954 /* Utils */,
 				1B90794E2449635600AE65D8 /* ViewController */,
 				1B7EC00724480AF60020E74E /* AppDelegate.swift */,
 				1B7EC00924480AF60020E74E /* SceneDelegate.swift */,
@@ -202,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B5C90F12449528A0013BE33 /* PictureCell.swift in Sources */,
+				1B45A6D0244B0F570018A954 /* Extensions.swift in Sources */,
 				1B7EC00C24480AF60020E74E /* ImageTableController.swift in Sources */,
 				1B907950244963DB00AE65D8 /* PhotoDetailController.swift in Sources */,
 				1B7EC00824480AF60020E74E /* AppDelegate.swift in Sources */,
